@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 public class ConnectSQL {
     public ConnectSQL(){
         conn = ConnectDb();
-        try (BufferedReader br1 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\city_names copy.txt"), "UTF8"))) {
+        try (BufferedReader br1 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\user\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\files_for_db\\city_names copy.txt"), "UTF8"))) {
             PreparedStatement statement;
             String sCurrentLine;
             statement = conn.prepareStatement("SET FOREIGN_KEY_CHECKS = 0;");
@@ -38,22 +38,22 @@ public class ConnectSQL {
                 statement = conn.prepareStatement("INSERT INTO destination(name) VALUES('" + sCurrentLine + "');");
                 statement.execute();
             }
-            BufferedReader br2 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\day_names.txt")));
+            BufferedReader br2 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\user\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\files_for_db\\day_names.txt")));
             while ((sCurrentLine = br2.readLine()) != null) {
                 statement = conn.prepareStatement("INSERT INTO trip_days(name) VALUES('" + sCurrentLine + "');");
                 statement.execute();
             }
-            BufferedReader br3 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\routes copy.txt")));
+            BufferedReader br3 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\user\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\files_for_db\\routes copy.txt")));
             while ((sCurrentLine = br3.readLine()) != null) {
                 statement = conn.prepareStatement("INSERT INTO routes(route_id, `from`, `to`, days, time) VALUES(" + sCurrentLine + ");");
                 statement.execute();
             }
-            BufferedReader br4 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\trips copy.txt")));
+            BufferedReader br4 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\user\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\files_for_db\\trips copy.txt")));
             while ((sCurrentLine = br4.readLine()) != null) {
                 statement = conn.prepareStatement("INSERT INTO trips(trip_id, departure_time, arrival_time, routes_id, price) VALUES(" + sCurrentLine + ");");
                 statement.execute();
             }
-            BufferedReader br5 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\stops copy.txt")));
+            BufferedReader br5 = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\user\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\files_for_db\\stops copy.txt")));
             while ((sCurrentLine = br5.readLine()) != null) {
                 if (!sCurrentLine.equals(""))
                 {
