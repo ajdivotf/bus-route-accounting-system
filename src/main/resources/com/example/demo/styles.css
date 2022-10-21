@@ -1,0 +1,90 @@
+#to-box, #pick-date {
+    -fx-font-family: Segoe UI;
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+     -fx-background-insets: 0;
+     -fx-background-color: rgb(220, 220, 220);
+     -fx-text-box-border: transparent;
+    -fx-pref-width:150px;
+    -fx-pref-height:37px;
+ }
+#to-box .list-cell:focused, #to-box .list-cell:selected, #to-box .list-cell:hover{
+    -fx-background-color: rgba(250, 107, 107, 0.8);
+}
+#to-box:focused, #pick-date:focused {
+     -fx-faint-focus-color: transparent;
+     -fx-focus-color: transparent;
+     -fx-background-color: rgb(250, 107, 107);
+     -fx-highlight-fill: rgb(250, 107, 107);
+}
+#to-box .arrow {
+    -fx-background-color: black;
+}
+#to-box .arrow-button {
+    -fx-background-color: rgb(250, 107, 107);
+    -fx-size: 5;
+}
+#pick-date .list-cell:focused, #pick-date .list-cell:selected, #pick-date .list-cell:hover{
+    -fx-background-color: rgba(250, 107, 107, 0.8);
+}
+.date-picker-popup > .month-year-pane {
+    -fx-base: rgb(250, 107, 107);
+}
+#pick-date .arrow {
+    -fx-background-color: black;
+}
+#pick-date .arrow-button {
+    -fx-background-color: rgb(250, 107, 107);
+    -fx-size: 5;
+}
+#pick-date .today {
+    -fx-font-weight: bold;
+}
+#pick-date .date-cell .selected {
+    -fx-background-color: -fx-type;
+    -fx-text-fill: -fx-main-back;
+}
+#pick-date .cell {
+  -fx-background-color: white;
+}
+
+#pick-date .cell:hover {
+  -fx-background-color: rgb(250, 107, 107);
+}
+
+#pick-date .cell:focused {
+  -fx-background-color: rgb(250, 107, 107);
+}
+#pick-date .selected {
+  -fx-background-color: rgb(250, 107, 107);
+  -fx-text-fill: white;
+}
+
+#pick-date .selected:focused {
+  -fx-background-color: rgb(250, 107, 107);
+  -fx-text-fill: white;
+}
+
+.date-picker-popup {
+  -fx-border-color: transparent;
+}
+
+.date-picker-popup .month-year-pane {
+  -fx-background-color: rgb(250, 107, 107);
+}
+
+.date-picker-popup .month-year-pane .label {
+  -fx-text-fill: white;
+}
+
+.date-picker-popup .week-number-cell {
+  -fx-text-fill: rgb(250, 107, 107);
+}
+#sign-in-button:hover, #sign-in-button:selected{
+      -fx-text-fill: rgb(250, 107, 107);
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: rgb(241, 242, 246);
+}

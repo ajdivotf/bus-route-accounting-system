@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="832.0" style="-fx-background-color: rgb(241,242,246);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditStopsController">
+    <children>
+        <AnchorPane layoutY="6.0" prefHeight="543.0" prefWidth="228.0" style="-fx-background-color: rgb(144,178,218);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button layoutX="24.0" layoutY="325.0" mnemonicParsing="false" onAction="#AddStop" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(250,107,107);" text="Добавить остановку" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <Button layoutX="24.0" layoutY="376.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(250,107,107);" text="Обновить базу" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <Button layoutX="24.0" layoutY="429.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(76,91,141);" text="Удалить остановку" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <TextField fx:id="txt_name" layoutX="24.0" layoutY="39.0" onKeyReleased="#search_route" prefHeight="30.0" prefWidth="180.0" promptText="Название" />
+                <TextField fx:id="txt_arrtime" layoutX="24.0" layoutY="89.0" prefHeight="30.0" prefWidth="180.0" promptText="Прибытие" />
+                <TextField fx:id="txt_deptime" layoutX="24.0" layoutY="138.0" prefHeight="30.0" prefWidth="180.0" promptText="Отбытие" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="table_routes" layoutX="228.0" layoutY="76.0" onMouseClicked="#getSelected" prefHeight="474.0" prefWidth="603.0">
+            <columns>
+                <TableColumn fx:id="col_route_id" minWidth="0.0" prefWidth="0" text="ID_HIDDEN" />
+                <TableColumn fx:id="col_stop_id" minWidth="0.0" prefWidth="0" text="ID_HIDDEN" />
+                <TableColumn fx:id="col_name" prefWidth="172.00006103515625" text="Название" />
+                <TableColumn fx:id="col_arrtime" prefWidth="101.5999755859375" text="Прибытие" />
+                <TableColumn fx:id="col_deptime" prefWidth="91.2000732421875" text="Отбытие" />
+                <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="114.39996337890625" text="Цена" />
+                <TableColumn fx:id="col_total_time" minWidth="0.0" prefWidth="107.2000732421875" text="Время в пути" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="stopsCombo" layoutX="611.0" layoutY="21.0" prefHeight="26.0" prefWidth="165.0" promptText="Остановки" style="-fx-background-color: white;" styleClass="combo-box" stylesheets="@styles.css" />
+        <Label fx:id="main_label" layoutX="247.0" layoutY="22.0" text="Маршрут Ростов-на-Дону - Анапа">
+            <font>
+                <Font name="Segoe UI" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

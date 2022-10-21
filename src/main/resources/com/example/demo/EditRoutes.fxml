@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="832.0" style="-fx-background-color: rgb(241,242,246);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditRoutesController">
+    <children>
+        <AnchorPane layoutY="6.0" prefHeight="543.0" prefWidth="228.0" style="-fx-background-color: rgb(144,178,218);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button layoutX="24.0" layoutY="322.0" mnemonicParsing="false" onAction="#AddRoutes" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(250,107,107);" text="Добавить маршрут" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <Button layoutX="24.0" layoutY="376.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(250,107,107);" text="Обновить базу" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <Button layoutX="24.0" layoutY="429.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: rgb(76,91,141);" text="Удалить маршрут" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font></Button>
+                <TextField fx:id="txt_name" layoutX="24.0" layoutY="39.0" onKeyReleased="#search_route" prefHeight="30.0" prefWidth="180.0" promptText="Куда" />
+                <TextField fx:id="txt_days" layoutX="24.0" layoutY="89.0" prefHeight="30.0" prefWidth="180.0" promptText="Дни" />
+                <TextField fx:id="txt_deptime" layoutX="24.0" layoutY="138.0" prefHeight="30.0" prefWidth="180.0" promptText="Отбытие" />
+                <TextField fx:id="txt_arrtime" layoutX="24.0" layoutY="186.0" prefHeight="30.0" prefWidth="180.0" promptText="Прибытие" />
+                <TextField fx:id="txt_price" layoutX="24.0" layoutY="230.0" prefHeight="23.0" prefWidth="180.0" promptText="Цена" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="table_routes" layoutX="228.0" layoutY="76.0" onMouseClicked="#getSelected" prefHeight="474.0" prefWidth="603.0">
+            <columns>
+                <TableColumn fx:id="col_dest_id" minWidth="0.0" prefWidth="0" text="ID_HIDDEN" />
+                <TableColumn fx:id="col_trip_id" minWidth="0.0" prefWidth="0" text="ID_HIDDEN" />
+                <TableColumn fx:id="col_route_id" minWidth="0.0" prefWidth="0" text="ID_HIDDEN" />
+                <TableColumn fx:id="col_name" prefWidth="154.4000244140625" text="Куда" />
+                <TableColumn fx:id="col_days" prefWidth="127.199951171875" text="Дни" />
+                <TableColumn fx:id="col_deptime" prefWidth="89.60003662109375" text="Отбытие" />
+                <TableColumn fx:id="col_arrtime" prefWidth="101.5999755859375" text="Прибытие" />
+                <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="111.2000732421875" text="Цена" />
+            </columns>
+        </TableView>
+        <TextField fx:id="filterField" layoutX="350.0" layoutY="30.0" promptText="Поиск" />
+    </children>
+</AnchorPane>
