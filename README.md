@@ -26,7 +26,8 @@
 
 <img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/log_as_admin.PNG' width='600'/>
 
-username=admin, password=sds2013
+>username = admin
+>password = sds2013
 
 Из-за допущенных упрощений пользователь не сможет зарегестрироваться, а, соответственно, и войти, поэтому его просто выбросит в главное меню.
 Войдя в систему, администратор увидит следующую таблицу:
