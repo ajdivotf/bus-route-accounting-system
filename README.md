@@ -5,7 +5,7 @@
 Дополнение: Должен быть разрешён выбор конечного и промежуточного пункта следования.
 
 Таким образом выглядит начальный экран, где можно выбрать пункт назначения и дату. Пункт назначения выбирается из соответствующей таблицы базы данных - таблицы routes, присоединённой к destination для получения названия - в данном случае имеются в виду конечные пункты каждого маршрута. При этом можно выбрать промежуточный пункт из любого маршрута, получаемый из таблицы stops.
-![](https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/initial_menu.PNG)
+<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/initial_menu.PNG' width='600'/>
 Вид интерфейса для каждого случая будет отличаться - в случае выбора конечного пункта меню маршрутов будет выглядеть таким образом:
 ![](https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/choose_end_of_route.PNG)
 В случае же выбора промежуточного пункта меню маршрутов будет выглядеть так:
