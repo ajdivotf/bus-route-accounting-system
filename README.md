@@ -10,7 +10,7 @@
 
 Схема базы данных выглядит следующим образом: 
 
-![https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/database_schema.PNG]
+<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/database_schema.PNG' width='600'/>
 
 Файлы для экспорта структуры базы содержатся в папке `src/main/resources/com/example/demo/sql_files`. В них уже содержатся значения, но их можно перезаписать путём редактирования соответствующих файлов из папки `src/main/resources/com/example/demo/files_for_db`.
 
