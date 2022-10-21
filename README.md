@@ -43,4 +43,5 @@ username=admin, password=sds2013
 <img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/edit_stops_table.PNG' width='600'/>
 
 Цена на маршрут фиксированная, но её может изменить администратор. Цена за каждую остановку рассчитывается по цене маршрута и времени до этой остановки, т.е.
-общая цена за маршрут / количество остановок в маршруте * время до остановки / 100
+
+`общая цена за маршрут / количество остановок в маршруте * время до остановки / 100`
