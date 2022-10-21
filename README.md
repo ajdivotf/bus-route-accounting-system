@@ -18,8 +18,8 @@
 
 Также будет отличаться список остановок - с конечным пунктом назначения маршрут будет отображаться полностью, а с промежуточным - до выбранной остановки:
 
-<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/stops_chosen_end.PNG' width='600'/>
-<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/stops_chosen_intermediate.PNG' width='600'/>
+<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/stops_chosen_end.PNG' width='300'/>
+<img src='https://github.com/ajdivotf/bus-route-accounting-system/blob/master/src/main/resources/com/example/demo/images/stops_chosen_intermediate.PNG' width='300'/>
 
 Это часть, к которой могут иметь доступ пользователи. Для администратора добавлена функция редактирования маршрутов. 
 Но сначала администратору нужно подтвердить свой статус, войдя в систему. Эта часть сделана упрощённо, без добавления пользователей в базу данных - в программе есть только лишь администратор:
